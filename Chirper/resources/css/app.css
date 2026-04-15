@@ -1,0 +1,139 @@
+@import 'tailwindcss';
+
+/* =========================
+   THEME BASE (DARK)
+========================= */
+:root {
+    color-scheme: dark;
+
+    --bg: #0f1115;
+    --bg-soft: #161a20;
+    --bg-hover: #1c2128;
+
+    --text: #e6e6e6;
+    --text-muted: #a1a1aa;
+
+    --primary: #4f7cff;
+    --primary-hover: #3b63d1;
+
+    --border: rgba(255, 255, 255, 0.08);
+
+    --radius: 8px;
+}
+
+/* =========================
+   BASE
+========================= */
+body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Instrument Sans', sans-serif;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+.navbar {
+    background: var(--bg-soft);
+    border-bottom: 1px solid var(--border);
+}
+
+/* =========================
+   CARDS
+========================= */
+.card {
+    background: var(--bg-soft);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 1rem;
+}
+
+.card:hover {
+    background: var(--bg-hover);
+}
+
+/* =========================
+   INPUTS
+========================= */
+.input,
+.textarea {
+    width: 100%;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    color: var(--text);
+    padding: 0.6rem 0.75rem;
+}
+
+.input:focus,
+.textarea:focus {
+    outline: none;
+    border-color: var(--primary);
+}
+
+/* =========================
+   BUTTONS
+========================= */
+.btn {
+    border-radius: var(--radius);
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+    cursor: pointer;
+}
+
+/* PRIMARY */
+.btn-primary {
+    background: var(--primary);
+    color: #fff;
+    border: none;
+}
+
+.btn-primary:hover {
+    background: var(--primary-hover);
+}
+
+/* GHOST */
+.btn-ghost {
+    background: transparent;
+    border: 1px solid var(--border);
+    color: var(--text);
+}
+
+.btn-ghost:hover {
+    background: var(--bg-hover);
+}
+
+/* =========================
+   LINKS
+========================= */
+a {
+    color: var(--primary);
+}
+
+a:hover {
+    color: var(--primary-hover);
+}
+
+/* =========================
+   TEXT HELPERS
+========================= */
+.text-muted {
+    color: var(--text-muted);
+}
+
+/* =========================
+   FOOTER
+========================= */
+footer {
+    background: var(--bg-soft);
+    color: var(--text-muted);
+    border-top: 1px solid var(--border);
+    padding: 1rem;
+}
+
+/* =========================
+   HEADINGS
+========================= */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 500;
+}
